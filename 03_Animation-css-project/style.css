@@ -1,0 +1,176 @@
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #0d001a;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      color: #e0e0ff;
+      overflow: hidden;
+    }
+
+    /* Background particles */
+    .particles {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .particle {
+      position: absolute;
+      background: #a78bfa;
+      border-radius: 50%;
+      box-shadow: 0 0 12px #a78bfa88;
+      animation: float linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(100vh) scale(0.4); opacity: 0; }
+      10%  { opacity: 0.7; }
+      90%  { opacity: 0.7; }
+      100% { transform: translateY(-30vh) scale(0.9); opacity: 0; }
+    }
+
+    .card-wrapper {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 10;
+    }
+
+    .profile-card {
+      width: 340px;
+      padding: 40px 30px;
+      background: rgba(20, 10, 40, 0.65);
+      border-radius: 24px;
+      border: 1px solid rgba(167, 139, 250, 0.18);
+      backdrop-filter: blur(12px);
+      box-shadow: 
+        0 25px 60px rgba(0,0,0,0.5),
+        0 0 0 1px rgba(167,139,250,0.12) inset,
+        0 0 40px rgba(167,139,250,0.15);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: cardBreath 6s ease-in-out infinite;
+    }
+
+    @keyframes cardBreath {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50%      { transform: translateY(-12px) scale(1.015); }
+    }
+
+    /* Neon glowing ring */
+    .profile-card::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 28px;
+      background: linear-gradient(45deg, #8b5cf6, #ec4899, #a78bfa, #8b5cf6);
+      background-size: 300% 300%;
+      animation: borderGlow 8s ease infinite;
+      z-index: -2;
+      filter: blur(6px);
+      opacity: 0.7;
+    }
+
+    @keyframes borderGlow {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .avatar-container {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 28px;
+    }
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #2d1b47;
+      box-shadow: 
+        0 0 30px rgba(167,139,250,0.6),
+        inset 0 0 20px rgba(0,0,0,0.6);
+      transition: all 0.4s ease;
+    }
+
+    .avatar-container:hover .avatar {
+      transform: scale(1.08);
+      box-shadow: 0 0 60px rgba(167,139,250,0.9);
+    }
+
+    /* Floating glow behind avatar */
+    .glow-ring {
+      position: absolute;
+      inset: -20px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #c084fc44, transparent 60%);
+      animation: pulseGlow 4s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(0.9); }
+      50%      { opacity: 0.85; transform: scale(1.15); }
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      margin-bottom: 8px;
+      background: linear-gradient(90deg, #c084fc, #ec4899, #a78bfa);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .title {
+      color: #c4b5fd;
+      font-size: 1.1rem;
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .social-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(167,139,250,0.12);
+      color: #c4b5fd;
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      transition: all 0.35s ease;
+      border: 1px solid rgba(167,139,250,0.25);
+    }
+
+    .social-icon:hover {
+      background: rgba(167,139,250,0.3);
+      transform: translateY(-6px) scale(1.1);
+      box-shadow: 0 12px 30px rgba(167,139,250,0.35);
+      color: white;
+      border-color: #a78bfa;
+    }
+  

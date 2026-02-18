@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Glow Profile - CSS Animation</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="particles" id="particles"></div>
+
+  <div class="card-wrapper">
+    <div class="profile-card">
+      <div class="avatar-container">
+        <div class="glow-ring"></div>
+        <img 
+          class="avatar" 
+          src="./profile.jpg" 
+          alt="profile"
+        >
+      </div>
+
+      <h1>Imdadul Haque</h1>
+      <div class="title">Frontend Enthusiast • CSS Artist</div>
+
+      <div class="socials">
+        <a href="#" class="social-icon">𝕏</a>
+        <a href="#" class="social-icon">GH</a>
+        <a href="#" class="social-icon">IG</a>
+        <a href="#" class="social-icon">✉</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Just a few random floating particles
+    const particlesContainer = document.getElementById('particles');
+    
+    for(let i = 0; i < 35; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      
+      const size = Math.random() * 5 + 2;
+      p.style.width  = size + 'px';
+      p.style.height = size + 'px';
+      
+      p.style.left   = Math.random() * 100 + 'vw';
+      p.style.animationDuration = (Math.random() * 18 + 12) + 's';
+      p.style.animationDelay    = Math.random() * -20 + 's';
+      
+      particlesContainer.appendChild(p);
+    }
+  </script>
+
+</body>
+</html>
