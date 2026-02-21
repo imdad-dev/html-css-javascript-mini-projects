@@ -31,6 +31,15 @@ My very first webpage — a simple personal portfolio.
 - CSS basics (flexbox for layout, colors)
 |  
  
+ ### 02. Zomato basic food delivery app
+ 
+A simple  **Zomato** food delivery homepage using only **HTML** and **CSS**.  
+This project includes:
+
+- Responsive header with logo,  navigation
+- Featured collections / product (images) embedded
+- Embedded demo video showing Zomato app usage
+
 
 ## How to Run These Projects Locally
 
