@@ -40,6 +40,22 @@ This project includes:
 - Featured collections / product (images) embedded
 - Embedded demo video showing Zomato app usage
 
+ 
+
+## 03 . Glowing Animated Profile Card ✨
+
+ profile card with:
+- glow animation using pure CSS
+- Subtle floating movement using JavaScript
+- Floating tiny star particles in the background
+
+## Features
+
+- Pulsing neon glow border & text  
+- Gentle floating / levitating effect on the whole card (JS + CSS)
+- Small  floating stars in background
+- Responsive & minimal design
+
 
 ## How to Run These Projects Locally
 
