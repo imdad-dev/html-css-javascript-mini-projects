@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem ;
+}
+
+.choice{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    gap: 5rem;
+}
+
+#user-score ,#comp-score{
+    font-size: 5rem;
+}
+ 
+/* 
+.score-board .score:nth-child(1) p:not([id]){
+   color:  green;
+} */
+
+.score-board .score:nth-child(1) p:not([id]) {
+    color: green; /* Color for "You" */
+    margin: 0;
+    text-align: center;
+}
+
+.score-board .score:nth-child(2) p:not([id]) {
+    color: rgb(243, 5, 45); /* Color for "Comp" */
+}
+
+.msg-container{
+    margin: 5rem;
+    text-align: center;
+
+}
+
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 3rem;
+    display: inline;
+
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
