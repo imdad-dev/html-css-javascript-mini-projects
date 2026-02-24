@@ -56,6 +56,31 @@ This project includes:
 - Small  floating stars in background
 - Responsive & minimal design
 
+### 04. Rock Paper Scissors Game 
+
+A clean, modern, and responsive **Rock Paper Scissors** game built with **HTML**, **CSS**, and **JavaScript**.
+
+
+## ✨ Features
+- Score tracking (Player vs Computer)
+- Round history  indicators
+- Responsive design  
+
+## 🎮 How to Play
+
+1. Choose **Rock** ✊, **Paper** ✋, or **Scissors** ✌️
+2. Computer makes a random choice
+3. Winner gets +1 point
+4. Winner message display 
+5. reset or new Game button 
+6.why you win/lose game messgae display 
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3  
+-  JavaScript (ES6+) 
+
 
 ## How to Run These Projects Locally
 
