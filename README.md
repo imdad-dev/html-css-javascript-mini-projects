@@ -5,6 +5,7 @@ Hi there! I'm **Imdadul Hoque** from Assam👋
 This repository is very special to me — it's where I keep **all my  first time projects** when I started learning web development in 2025.
 
 If you're a complete beginner like I was, I hope seeing my progress motivates you.  
+
 **You don't need to be perfect from day one — just start.**
 
 ## Why I Created This Repo
@@ -38,10 +39,9 @@ This project includes:
 
 - Responsive header with logo,  navigation
 - Featured collections / product (images) embedded
-- Embedded demo video showing Zomato app usage
+- Embedded  video on home page 
 
  
-
 ## 03 . Glowing Animated Profile Card ✨
 
  profile card with:
@@ -56,7 +56,7 @@ This project includes:
 - Small  floating stars in background
 - Responsive & minimal design
 
-### 04. Rock Paper Scissors Game 
+### 04. Rock Paper Scissors Game 🎮
 
 A clean, modern, and responsive **Rock Paper Scissors** game built with **HTML**, **CSS**, and **JavaScript**.
 
@@ -65,21 +65,22 @@ A clean, modern, and responsive **Rock Paper Scissors** game built with **HTML**
 - Score tracking (Player vs Computer)
 - Round history  indicators
 - Responsive design  
+- Winner message display 
+-why you win/lose game messgae display 
+- reset or new Game button 
 
 ## 🎮 How to Play
 
 1. Choose **Rock** ✊, **Paper** ✋, or **Scissors** ✌️
 2. Computer makes a random choice
 3. Winner gets +1 point
-4. Winner message display 
-5. reset or new Game button 
-6.why you win/lose game messgae display 
+
 
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3  
--  JavaScript (ES6+) 
+- JavaScript (ES6+) 
 
 
 ## How to Run These Projects Locally
