@@ -27,3 +27,16 @@ A simple, beautiful and fully responsive **Tic-Tac-Toe** game built with **HTML*
 - HTML5  
 - CSS3  
 - JavaScript (ES6+)
+
+
+## 📸 How it looks
+
+<p align="center">
+  <img src="images/start.png" width="30%" alt="Game start">
+  &nbsp; &nbsp;
+  <img src="images/win-o.png" width="30%" alt="winner-o">
+  &nbsp; &nbsp;
+  <img src="images/win-x.png" width="30%" alt="Winner-x">
+</p>
+
+ 
