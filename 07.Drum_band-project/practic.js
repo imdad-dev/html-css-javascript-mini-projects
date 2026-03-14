@@ -1,7 +1,21 @@
+// // Power switch setup (add this once at the top)
+// let power = false;  // Start as OFF (change to true if you want it ON by default)
+
+// document.getElementById("powerBtn").addEventListener("click", function() {
+//     power = !power;  // Toggle: true → false, false → true
+    
+//     // Update button text
+//     this.textContent = power ? "Power ON" : "Power OFF";
+    
+//     // Toggle a CSS class for styling
+//     this.classList.toggle("power-off");
+    
+//     // Dim the whole page when OFF
+//     document.body.style.opacity = power ? "1" : "0.5";
+// });
 
 let numberOfDrumButtons=document.querySelectorAll(".drum");
-
-// console.log(numberOfDrumButtons);--> give all nodes of drum
+// console.log(numberOfDrumButtons); give all nodes of drum
 
 // for click 
 for(let i=0; i<numberOfDrumButtons.length; i++){
@@ -71,12 +85,13 @@ function btnShadow(currentKey){
 
      let activebtn=document.querySelector("."+ currentKey);
 
-     // if no mathcing btn then return nothing ..for handle null classList error
+     // if no mathcing btn then return nothin ..for handle null classList error
 
      if(!activebtn) return ;
      
 activebtn.classList.add("pressed")
 
+//  console.log(activebtn)
 
 // give setTimeout 
 
