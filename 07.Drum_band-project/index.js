@@ -86,3 +86,59 @@ setTimeout(()=>{
 
 }
 
+
+// ===================== DARK MODE TOGGLE =====================
+const darkToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+
+// Remember user's choice
+if (localStorage.getItem('theme') === 'dark') {
+  darkToggle.checked = true;
+  body.classList.add('dark-mode');
+}
+
+// Toggle on click
+darkToggle.addEventListener('change', () => {
+  if (darkToggle.checked) {
+    body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    body.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+
+// ===================== POWER BUTTON LOGIC =====================
+const powerBtn = document.querySelector('.powerBtn');
+let isPowerOn = true;   // starts ON
+
+function togglePower() {
+  isPowerOn = !isPowerOn;
+
+  if (isPowerOn) {
+    document.body.classList.remove('power-off');
+    powerBtn.textContent = 'POWER OFF';
+  } else {
+    document.body.classList.add('power-off');
+    powerBtn.textContent = 'POWER ON';
+  }
+}
+
+// Click on button
+powerBtn.addEventListener('click', togglePower);
+
+// BLOCK KEYBOARD when power is OFF (works with your existing key logic)
+document.addEventListener('keydown', function(e) {
+  if (!isPowerOn) {
+    const drumKeys = ['w', 'a', 's', 'd', 'j', 'k', 'l'];
+    if (drumKeys.includes(e.key.toLowerCase())) {
+      e.stopImmediatePropagation();   // stops your existing key handler
+      return false;
+    }
+  }
+}, true); // capture phase = runs first
+
+// Initial state (button already says "POWER OFF" in HTML)
+document.body.classList.remove('power-off');
+powerBtn.textContent = 'POWER OFF';

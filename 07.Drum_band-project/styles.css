@@ -76,15 +76,181 @@ footer {
 }
 
 
-.powerBtn{
-  color:white;
-  background-color: rgb(12, 43, 57);
-  /* border: none; */
-  font-size: 1.2rem;
-  border-radius: 5px solid red;
+ 
+
+/* ==================== DARK MODE TOGGLE FEATURE ==================== */
+
+/* Toggle Switch Container */
+.theme-switch-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  gap: 15px;
 }
 
-.power-off {
-    background: #666 !important;
-    opacity: 0.7;
+.theme-switch-wrapper .sun,
+.theme-switch-wrapper .moon {
+  font-size: 1.8rem;
+}
+
+/* The switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* ===================== DARK MODE STYLES ===================== */
+body.dark-mode {
+  background-color: #121212;
+}
+
+body.dark-mode #title {
+  color: #f1f1f1;
+}
+
+body.dark-mode .drum {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #555555;
+}
+
+body.dark-mode .powerBtn {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #555555;
+}
+
+body.dark-mode footer {
+  color: #999999;
+}
+
+/* Pressed animation in dark mode (works with your existing .pressed class) */
+body.dark-mode .pressed {
+  background-color: #1f1f1f !important;
+  box-shadow: 0 3px 4px 0 #444;
+  opacity: 0.85;
+}
+
+/* Switch looks better in dark mode */
+body.dark-mode .slider {
+  background-color: #666;
+}
+body.dark-mode input:checked + .slider {
+  background-color: #00b4ff;
+}
+/* ==================== POWER BUTTON FEATURE (BLACK POWER OFF) ==================== */
+
+.powerBtn {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.powerBtn:hover {
+  transform: scale(1.05);
+}
+
+/* Green when POWER ON */
+body:not(.power-off) .powerBtn {
+  background-color: #4caf50;
+}
+
+body:not(.power-off) .powerBtn:hover {
+  background-color: #66bb6a;
+}
+
+/* Red when POWER OFF */
+body.power-off .powerBtn {
+  background-color: #ff3b3b;
+}
+
+body.power-off .powerBtn:hover {
+  background-color: #ff5555;
+}
+
+/* ===================== PURE BLACK POWER OFF ===================== */
+body.power-off {
+  background-color: #000000 !important;
+}
+
+body.power-off #title {
+  color: #000000 !important;
+  text-shadow: none;
+}
+
+body.power-off .drum {
+  background-color: #000000 !important;
+  color: #000000 !important;           /* letters completely invisible */
+  border-color: #222222;
+  box-shadow: none !important;
+  opacity: 1;
+}
+
+body.power-off .set {
+  filter: none;
+}
+
+body.power-off footer {
+  color: #000000;
+}
+
+/* Works perfectly with your Dark Mode */
+body.dark-mode.power-off .drum {
+  background-color: #000000 !important;
+  color: #000000 !important;
+}
+
+/* Power button always stays visible */
+body.power-off .powerBtn,
+body.dark-mode.power-off .powerBtn {
+  color: white !important;
 }
