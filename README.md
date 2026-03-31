@@ -112,6 +112,35 @@ A simple, beautiful and fully responsive **Tic-Tac-Toe** game built with **HTML*
 - CSS3  
 - JavaScript (ES6+)
 
+
+# 07.🥁 Drum Kit project
+
+A fun, interactive virtual drum kit you can play using your computer keyboard!  
+Press **W A S D J K L** keys to make different drum sounds.
+
+
+## ✨ Features
+
+- Play 7 different drum sounds using keyboard keys:
+  - **w** → Tom-1
+  - **a** → Tom-2
+  - **s** → Tom-3
+  - **d** → tom-4
+  - **j** → Crash
+  - **k** → Kick/Bass
+  - **l** → snare
+- Visual feedback (button animation) when you hit a key
+- **Power ON/OFF** button
+- Dark mode / Light mode toggle (☀️ ↔ 🌙)
+- Responsive design (works on mobile & desktop — tap buttons too!)
+- Made with pure **HTML + CSS + JavaScript** (no frameworks)
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3 (Flexbox + Animations + Dark mode)
+- Vanilla JavaScript (DOM manipulation, event listeners, audio playback)
+
 ## How to Run These Projects Locally
 
 1. Clone the repo
