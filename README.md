@@ -42,7 +42,7 @@ This project includes:
 - Embedded  video on home page 
 
  
-## 03 . Glowing Animated Profile Card ✨
+### 03 . Glowing Animated Profile Card ✨
 
  profile card with:
 - glow animation using pure CSS
@@ -112,8 +112,27 @@ A simple, beautiful and fully responsive **Tic-Tac-Toe** game built with **HTML*
 - CSS3  
 - JavaScript (ES6+)
 
+### 06. Expense Tracker 💰
 
-# 07.🥁 Drum Kit project
+A simple and clean web-based Expense Tracker built with HTML, CSS, and JavaScript. It allows users to add, view, and delete expenses while keeping track of the total amount spent.
+
+## ✨ Features
+
+- Add new expenses with name and amount
+- Real-time total expense calculation
+- Responsive and clean UI
+- Delete individual expenses
+- Data persists using `localStorage` (expenses remain after page refresh)
+- Mobile-friendly design
+
+## 🛠️ Technologies Used
+
+- **HTML5** - Structure
+- **CSS3** - Styling and responsiveness
+- **Vanilla JavaScript** - Functionality and DOM manipulation
+- **localStorage** - Data persistence
+
+### 07.🥁 Drum Kit project
 
 A fun, interactive virtual drum kit you can play using your computer keyboard!  
 Press **W A S D J K L** keys to make different drum sounds.
