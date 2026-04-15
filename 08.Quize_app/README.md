@@ -25,3 +25,22 @@ A simple, interactive Quiz Application built with HTML, CSS, and JavaScript. Tes
 - Users can only select one answer per question
 - The app tracks the score automatically
 - After the last question, the final score is displayed
+
+## 📂 Project Structure
+quiz-app/
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
+
+
+## 🚀 How to Run
+
+1. **Clone the repository** (or download the project files):
+   ```bash
+  - git clone  https://github.com/imdad-dev/html-css-javascript-mini-projects/tree/main/08.Quize_app
+  - cd quiz-app
+
+ 2.  Open the project:
+    - Simply open index.html in your favorite web browser.
+    - No server or installation required!
