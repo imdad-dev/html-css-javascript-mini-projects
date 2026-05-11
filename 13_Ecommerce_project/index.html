@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Imsho.com </title>
+
+    <!-- cdnjs.com font awesome -> cdn_>ocntent delivery network (nearst serber data gain or fastart load)  ...for icon , -->
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="navbar"> 
+            <div class="nav-logo border">
+            <div class="logo">
+                <img src="image/logoFianl.jpg" width="100px" height="50px" alt="Logo not working ">
+            </div>
+        </div>
+
+
+   <!-- 2nd box -->
+<div class="nav-address border">
+    <p class="nav-location1">Deliver to</p>
+    <div class="add-icon">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="nav-location2">India</p>
+    </div>
+</div>
+
+<!-- 3rd box--> 
+ 
+<div class="nav-search">
+    <select class="search-select" name="category" id="category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+        <option value="home">Home & Furniture</option>
+        <option value="beauty">Beauty</option>
+        <option value="books">Books</option>
+        <option value="toys">Toys & Games</option>
+        <option value="sports">Sports & Fitness</option>
+    </select>
+    <input class="search-input" type="text" placeholder="Search for Products, Brands and More">
+    <button class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    <div class="search-recommendations">
+        <div class="triangleUP"></div>
+        <div class="recommendations-content">
+            <div class="recommendation-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>Recent: Smartphones</p>
+            </div>
+            <div class="recommendation-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>Recent: Sneakers</p>
+            </div>
+            <div class="recommendation-item">
+                <i class="fa-solid fa-star"></i>
+                <p>Recommended: Laptops</p>
+            </div>
+            <div class="recommendation-item">
+                <i class="fa-solid fa-star"></i>
+                <p>Recommended: Headphones</p>
+            </div>
+            <div class="recommendation-item">
+                <i class="fa-solid fa-star"></i>
+                <p>Recommended: Home Decor</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ====  LOGIN / SIGNUP POPUP ==== -->
+<div class="simplePopupOverlay" id="popupOverlay" style="display:none;">
+    <div class="simplePopup">
+        <span class="popupClose" id="popupClose">X</span>
+        
+        <!-- Login Form -->
+        <div class="popupContent" id="loginContent">
+            <h3>Login</h3>
+            <form id="loginForm">
+                <input type="text" placeholder="Email or Mobile" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p class="switchLink"><a href="#" id="toSignup">New user? Sign up</a></p>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="popupContent" id="signupContent" style="display:none;">
+            <h3>Sign Up</h3>
+            <form id="signupForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Mobile" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Create Account</button>
+            </form>
+            <p class="switchLink"><a href="#" id="toLogin">Already have account? Login</a></p>
+        </div>
+
+        <!-- My Account Menu (after login) -->
+        <div class="popupContent" id="accountContent" style="display:none;">
+            <h3>My Account</h3>
+            <div class="accountItem">
+                <i class="fa-solid fa-user"></i>
+                <a href="#">My Profile</a>
+            </div>
+            <div class="accountItem">
+                <i class="fa-solid fa-truck"></i>
+                <a href="order.html">Orders</a>
+            </div>
+            <div class="accountItem">
+                <i class="fa-regular fa-heart"></i>
+                <a href="wish.html">Wishlist</a>
+            </div>
+            <div class="accountItem">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <a href="#" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 4rd box login your Accound  -->
+<!-- Login Button -->
+    <button class="log border" id="loginBtn">
+        <a href="">Login</a>
+        <div class="hoverLogin">
+            <div class="triangleUP"></div>
+
+            
+            <div class="newuser">
+                <p>New Customer?</p>
+                <a href="">Sign up</a>
+            </div>
+ 
+
+            <div class="loginMenu">
+                <div class="menuList">
+                    <i class="fa-solid fa-user"></i>
+                    <p><a href="">My Profile</a></p>
+                </div>
+            </div>
+            
+            <div class="loginMenu">
+                <div class="menuList">
+                <i class="fa-solid fa-truck"></i>
+                    <p><a href="">Orders</a></p>
+                </div>
+            </div>
+            <div class="loginMenu">
+                <div class="menuList">
+                    <i class="fa-regular fa-heart"></i>
+                    <p><a href="">Wishlist</a></p>
+                </div>
+            </div>
+            <div class="loginMenu">
+                <div class="menuList">
+                   <i class="fa-solid fa-trophy"></i>
+                    <p><a href="#">Rewards</a></p>
+                </div>
+            </div>
+            <div class="loginMenu">
+                <div class="menuList">
+                      <i class="fa-solid fa-gift"></i>
+                    <p><a href="#">Gift Cards</a></p>
+                </div>
+            </div>
+        </div>
+    </button>
+
+ 
+<!-- 5th box -->
+<div class="nav-rutern border">
+    <p><span>Return </span></p>
+    <p class="nav-second">& Order</p>
+</div>
+ 
+
+<!-- 6th  box -->
+<div class="nav-cart border">
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart
+</div>
+
+<!-- last box -->
+<!-- More Section -->
+    <div class="more">
+        <p class="more1">More</p>
+        <div class="moreDisplay">
+            <div class="triangleUP"></div>
+            <div class="more_contant">
+                <div class="more_option">
+                    <i class="fa-solid fa-bell"></i>
+                    <p>Notification</p>
+                </div>
+                <div class="more_option">
+                    <i class="fa-solid fa-headset"></i>
+                    <p>24×7 Customer Care</p>
+                </div>
+                <div class="more_option">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>Advertise</p>
+                </div>
+                <div class="more_option">
+                    <i class="fa-solid fa-download"></i>
+                    <p>Download App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="panel">
+    <div class="panel-all">
+        <!-- menu Icon place here -->
+         <i class="fa-solid fa-bars"></i>
+         <p>  All</p>
+        </div>
+
+
+    <div class="panel-option">
+        <p>Today's Deals</p>
+         <p>Prime Video</p>
+        <p> Registry</p>
+        <p>Customer Service</p>
+       <p>  Gift Cards</p>
+       <p>Sell</p>
+    </div>
+</div>
+
+</header>
+ 
+</body>
+</html>
