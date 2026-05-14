@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -515,6 +515,149 @@ span{
 .panel-option{
         font-size: 0.85rem;
         font-weight: 500;
+}
+
+
+/* hero section  */
+ 
+/* -------------------------------------------------
+   HERO SLIDER – 400px, background-size: cover
+   ------------------------------------------------- */
+.hero-slider {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    background: #000;
+    /* Removed redundant flex properties from .hero-slider as they belong on .hero-slide */
+}
+
+/* ---- Individual slide (background image) ---- */
+.hero-slide {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* 1. Ensures image fills the container */
+    background-size: cover;
+
+    /* 2. Ensures the image subject is centered on the slide */
+    /* background-position: center;  */
+    
+    /* display: flex; */
+    /* Centers content horizontally */
+    justify-content: center; 
+    /* Centers content vertically (MODIFIED from flex-end) */
+    align-items: center; 
+    
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.hero-slide.active { opacity: 1; }
+
+/* ---- Message bar (Amazon style) ---- */
+.hero-msg {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,.95);
+  color: #111;
+  font-size: .85rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  width: 85%;
+  max-width: 1200px;
+  z-index: 10;
+  gap: 6px;
+}
+.hero-msg .icon {
+  font-size: 1.1rem;
+}
+.claim-btn {
+  margin-left: .8rem;
+  background: #ffca28;
+  color: #1a1a1a;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: .75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s;
+}
+.claim-btn:hover { background: #ffb300; }
+
+/* ---- Amazon-style Navigation Arrows ---- */
+.hero-prev, .hero-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,.5);
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 11;
+  transition: background .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-prev:hover, .hero-next:hover {
+  background: rgba(0,0,0,.7);
+}
+.hero-prev { left: 16px; }
+.hero-next { right: 16px; }
+
+/* SVG arrow size */
+.hero-prev svg, .hero-next svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* ---- Dots ---- */
+.hero-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 11;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.5);
+  cursor: pointer;
+  transition: background .2s;
+}
+.dot.active, .dot:hover { background: #fff; }
+
+/* -------------------------------------------------
+   RESPONSIVE
+   ------------------------------------------------- */
+@media (max-width: 768px) {
+  .hero-msg { font-size: .75rem; padding: 0 .6rem; }
+  .claim-btn { padding: 3px 9px; font-size: .7rem; }
+  .hero-prev, .hero-next { width: 40px; height: 40px; }
+  .hero-prev svg, .hero-next svg { width: 22px; height: 22px; }
+}
+
+
+.hero-msg a{
+  
+    color: #007185;
 }
 
  
