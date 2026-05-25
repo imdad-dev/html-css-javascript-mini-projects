@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -837,4 +837,97 @@ span{
   }
 }
 
-  
+ 
+/**
+   * #TESTIMONIALS, CTA & SERVICE 
+/* -------------------------------------------------
+   TESTIMONIALS + CTA + SERVICES – Compact & Clean
+   ------------------------------------------------- */
+
+.container {
+  background:#eaefee;
+  padding: 50px 20px;
+  margin: 40px auto;
+  max-width: 1400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.05);
+}
+
+/* ---- 3-column grid: middle wider ---- */
+.testimonials-box {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;   /* Middle CTA wider */
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* ---- All cards same height (340px) ---- */
+.testimonial,
+.cta-container,
+.service {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 340px;               /* SAME HEIGHT */
+  overflow: hidden;
+}
+
+/* -------------------------------------------------
+   TESTIMONIAL
+   ------------------------------------------------- */
+.testimonial .title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.testimonial-banner {
+  width: 80px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border: 3px solid #ffca28;
+}
+
+.testimonial-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 6px 0 2px;
+}
+
+.testimonial-title {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.quotation-img {
+  width: 22px;
+  height: 22px;
+  margin: 10px auto;
+  opacity: 0.6;
+}
+
+.testimonial-desc {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  font-style: italic;
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 4px;
+}
+ 
