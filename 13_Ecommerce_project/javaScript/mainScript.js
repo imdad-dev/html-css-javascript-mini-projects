@@ -18,4 +18,36 @@
         signupContent.style.display = 'none';
         accountContent.style.display = 'none';
     }
- 
+
+    // Click Login / My Profile / Sign up → open popup
+    document.querySelectorAll('.log a, .newuser a, .menuList a').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            if (loginBtn.textContent.includes('Hi,')) {
+                // Already logged in → show account
+                loginContent.style.display = 'none';
+                signupContent.style.display = 'none';
+                accountContent.style.display = 'block';
+            } else {
+                openPopup();
+            }
+            popupOverlay.style.display = 'flex';
+        });
+    });
+
+    // Close popup
+    popupClose.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+    });
+    popupOverlay.addEventListener('click', e => {
+        if (e.target === popupOverlay) popupOverlay.style.display = 'none';
+    });
+
+    // Switch: Login → Signup
+    toSignup.addEventListener('click', e => {
+        e.preventDefault();
+        loginContent.style.display = 'none';
+        signupContent.style.display = 'block';
+    });
+
+     
