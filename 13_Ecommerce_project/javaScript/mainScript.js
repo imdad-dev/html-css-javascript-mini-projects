@@ -1,4 +1,4 @@
-// login pop up
+ // login pop up
 
     const popupOverlay   = document.getElementById('popupOverlay');
     const popupClose     = document.getElementById('popupClose');
@@ -50,4 +50,24 @@
         signupContent.style.display = 'block';
     });
 
-     
+    // Switch: Signup → Login
+    toLogin.addEventListener('click', e => {
+        e.preventDefault();
+        signupContent.style.display = 'none';
+        loginContent.style.display = 'block';
+    });
+
+    //  Login Success
+    document.getElementById('loginForm').addEventListener('submit', e => {
+        e.preventDefault();
+        loginBtn.textContent = 'Hi, User';
+        showAccountMenu();
+    });
+
+    //  Signup Success
+    document.getElementById('signupForm').addEventListener('submit', e => {
+        e.preventDefault();
+        loginBtn.textContent = 'Hi, User';
+        showAccountMenu();
+    });
+ 
