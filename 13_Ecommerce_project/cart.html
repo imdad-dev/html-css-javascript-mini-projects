@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - Invision Store</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6f9; margin:0; padding:20px; }
+    .container { max-width: 900px; margin: 20px auto; background: white; border-radius: 16px; padding: 30px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+    h1 { text-align:center; color:#2c3e50; }
+    .item { display:flex; align-items:center; padding:15px 0; border-bottom:1px solid #eee; }
+    .item img { width:80px; height:80px; object-fit:cover; border-radius:10px; margin-right:20px; }
+    .details h3 { margin:0; font-size:1.1rem; }
+    .price { font-weight:bold; color:#e74c3c; }
+    .original { text-decoration:line-through; color:#95a5a6; margin-left:8px; }
+    .qty { background:#3498db; color:white; padding:4px 10px; border-radius:12px; font-size:0.9rem; }
+    .total { text-align:right; font-size:1.6rem; font-weight:bold; color:#27ae60; margin:30px 0; }
+    .empty { text-align:center; padding:60px; color:#7f8c8d; font-size:1.3rem; }
+    .clear-btn { background:#e74c3c; color:white; border:none; padding:10px 20px; border-radius:8px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Your Shopping Cart</h1>
+    <div id="items"></div>
+    <div class="total">Total: ₹<span id="total">0</span></div>
+    <div style="text-align:center;">
+      <button class="clear-btn" onclick="localStorage.removeItem('invisionCart2025'); location.reload();">
+        Clear Cart
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // === ALWAYS USE THE SAME KEY ===
+    const cart = JSON.parse(localStorage.getItem("invisionCart2025") || "[]");
+    const list = document.getElementById("items");
+    let total = 0;
+
+    if (cart.length === 0) {
+      list.innerHTML = `<div class="empty">Your cart is empty</div>`;
+    } else {
+      cart.forEach(item => {
+        total += item.price * item.quantity;
+        list.innerHTML += `
+          <div class="item">
+            <img src="${item.img}" alt="${item.title}">
+            <div class="details">
+              <h3>${item.title}</h3>
+              <p>
+                <span class="price">₹${item.price.toLocaleString()}</span>
+                <span class="original">₹${item.originalPrice.toLocaleString()}</span>
+                <span class="qty">Qty: ${item.quantity}</span>
+              </p>
+            </div>
+          </div>
+        `;
+      });
+    }
+    document.getElementById("total").textContent = total.toLocaleString();
+  </script>
+</body>
+</html>
