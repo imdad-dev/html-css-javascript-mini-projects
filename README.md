@@ -29,7 +29,7 @@ A collection of **10+ beginner-to-intermediate web development projects** built 
  
 ## Projects
 
-### 01. Personal Portfolio
+### 01. Personal portfolio
 
 A responsive personal portfolio website showcasing basic HTML structure and CSS styling.
 
@@ -41,17 +41,25 @@ A responsive personal portfolio website showcasing basic HTML structure and CSS 
 **Tech Stack**
 - HTML5
 - CSS3 
+ ---
+ ### 02. Zomato Basic Food Delivery App
  
- ### 02. Zomato basic food delivery app
- 
-A simple  **Zomato** food delivery homepage using only **HTML** and **CSS**.  
-This project includes:
+A responsive food delivery landing page inspired by **Zomato**, built using HTML and CSS.
 
-- Responsive header with logo,  navigation
-- Featured collections / product (images) embedded
-- Embedded  video on home page 
+#### Key Features
 
- 
+- Responsive navigation bar
+- Hero section
+- Featured collections
+- Embedded media content
+- Mobile-friendly layout
+
+Technologies
+
+- HTML5
+- CSS3
+
+ ---
 ### 03 . Glowing Animated Profile Card ✨
 
  profile card with:
@@ -59,19 +67,19 @@ This project includes:
 - Subtle floating movement using JavaScript
 - Floating tiny star particles in the background
 
-## Features
+#### Features
 
 - Pulsing neon glow border & text  
 - Gentle floating / levitating effect on the whole card (JS + CSS)
 - Small  floating stars in background
 - Responsive & minimal design
-
+---
 ### 04. Rock Paper Scissors Game 🎮
 
 A clean, modern, and responsive **Rock Paper Scissors** game built with **HTML**, **CSS**, and **JavaScript**.
 
 
-## ✨ Features
+#### ✨ Features
 - Score tracking (Player vs Computer)
 - Round history  indicators
 - Responsive design  
@@ -79,26 +87,26 @@ A clean, modern, and responsive **Rock Paper Scissors** game built with **HTML**
 -why you win/lose game messgae display 
 - reset or new Game button 
 
-## 🎮 How to Play
+#### 🎮 How to Play
 
 1. Choose **Rock** ✊, **Paper** ✋, or **Scissors** ✌️
 2. Computer makes a random choice
 3. Winner gets +1 point
 
 
-## 🛠️ Technologies Used
+#### 🛠️ Technologies Used
 
 - HTML5
 - CSS3  
 - JavaScript (ES6+) 
 
-
+---
 
 ### 05. Tic Tac Toe Game🎮
 
 A simple, beautiful and fully responsive **Tic-Tac-Toe** game built with **HTML**, **CSS**, and **JavaScript** only — no frameworks.
 
-## Features
+#### Features
 
 - Classic 3×3 Tic-Tac-Toe gameplay  
 - Two players: **X** and **O** (turn-based)  
@@ -108,7 +116,7 @@ A simple, beautiful and fully responsive **Tic-Tac-Toe** game built with **HTML*
 - **Reset** button – clear board but keep same starting player  
 - No external libraries – pure vanilla JavaScript
 
-## How to Play
+#### How to Play
 
 1. **O** starts first  
 2. Click on any empty box to place your mark  
@@ -116,17 +124,18 @@ A simple, beautiful and fully responsive **Tic-Tac-Toe** game built with **HTML*
 4. Use **New Game** to restart completely  
 5. Use **Reset** to clear board without changing who starts
 
-## Technologies Used
+#### Technologies Used
 
 - HTML5  
 - CSS3  
 - JavaScript (ES6+)
+---
 
 ### 06. Expense Tracker 💰
 
 A simple and clean web-based Expense Tracker built with HTML, CSS, and JavaScript. It allows users to add, view, and delete expenses while keeping track of the total amount spent.
 
-## ✨ Features
+#### ✨ Features
 
 - Add new expenses with name and amount
 - Real-time total expense calculation
@@ -135,20 +144,21 @@ A simple and clean web-based Expense Tracker built with HTML, CSS, and JavaScrip
 - Data persists using `localStorage` (expenses remain after page refresh)
 - Mobile-friendly design
 
-## 🛠️ Technologies Used
+#### 🛠️ Technologies Used
 
 - **HTML5** - Structure
 - **CSS3** - Styling and responsiveness
 - **Vanilla JavaScript** - Functionality and DOM manipulation
 - **localStorage** - Data persistence
+---
 
-### 07.🥁 Drum Kit project
+### 07.🥁 Drum Kit Project
 
 A fun, interactive virtual drum kit you can play using your computer keyboard!  
 Press **W A S D J K L** keys to make different drum sounds.
 
 
-## ✨ Features
+#### ✨ Features
 
 - Play 7 different drum sounds using keyboard keys:
   - **w** → Tom-1
@@ -164,18 +174,19 @@ Press **W A S D J K L** keys to make different drum sounds.
 - Responsive design (works on mobile & desktop — tap buttons too!)
 - Made with pure **HTML + CSS + JavaScript** (no frameworks)
 
-## 🛠️ Technologies Used
+#### 🛠️ Technologies Used
 
 - HTML5
 - CSS3 (Flexbox + Animations + Dark mode)
 - Vanilla JavaScript (DOM manipulation, event listeners, audio playback)
+---
 
 ### 08. Quiz App
 
 A simple, interactive Quiz Application built with HTML, CSS, and JavaScript. Test your knowledge with multiple-choice questions in a clean and user-friendly interface.
 
 
-## ✨ Features
+#### ✨ Features
 
 - Clean and responsive design
 - Multiple choice questions
@@ -185,25 +196,25 @@ A simple, interactive Quiz Application built with HTML, CSS, and JavaScript. Tes
 - Smooth transitions between screens
 - Mobile-friendly interface
 
-## 🛠️ Technologies Used
+#### 🛠️ Technologies Used
 
 - **HTML5** - Structure
 - **CSS3** - Styling and responsiveness
 - **Vanilla JavaScript** - Logic and interactivity
 
-## 🎯 How It Works
+#### 🎯 How It Works
 
 - Questions and answers are defined in `script.js`
 - Users can only select one answer per question
 - The app tracks the score automatically
 - After the last question, the final score is displayed
+---
 
-
-## 09. Dark Mode To-Do List
+### 09. Dark Mode To-Do List
 
 A clean, modern, and fully functional To-Do List web application with a sleek dark theme.
 
-## Features
+#### Features
 
 - ✅ Add new tasks
 - ✅ Mark tasks as complete (with strikethrough)
@@ -213,31 +224,32 @@ A clean, modern, and fully functional To-Do List web application with a sleek da
 - ✅ Tasks persist using `localStorage` (data stays even after page refresh)
 - ✅ Smooth animations and hover effects
 
-## How It Works
+#### How It Works
 
-### 1. Adding a Task
+##### 1. Adding a Task
 - Type your task in the input field
 - Click the **"Add Task"** button or press **Enter**
 - The new task will appear in the list below
 
-### 2. Completing a Task
+##### 2. Completing a Task
 - Click on any task to mark it as complete
 - Completed tasks will have a strikethrough and reduced opacity
 - Click again to undo (mark as incomplete)
 
-### 3. Deleting a Task
+##### 3. Deleting a Task
 - Click the delete (🗑️) button next to any task
 - The task will be permanently removed
 
-### 4. Data Persistence
+##### 4. Data Persistence
 - All your tasks are automatically saved in your browser's `localStorage`
 - Your tasks will remain even if you close and reopen the browser
+---
 
-## 10. Weather App
+### 10. Weather App
 
 A simple and clean Weather Application built with HTML, CSS, and JavaScript that allows users to search for current weather information by city name.
 
-## ✨ Features
+#### ✨ Features
 
 - Search weather by city name
 - Displays current temperature
@@ -246,14 +258,14 @@ A simple and clean Weather Application built with HTML, CSS, and JavaScript that
 - Error handling for invalid city names
 - Real-time weather data
 
-## 🛠️ Technologies Used
+#### 🛠️ Technologies Used
 
 - **HTML5** - Structure
 - **CSS3** - Styling and responsiveness
 - **Vanilla JavaScript** - Logic and API integration
 - **OpenWeatherMap API** (or any weather API of your choice)
 
-## 🔍 How It Works
+#### 🔍 How It Works
 
 The Weather App works in the following steps:
 
@@ -273,12 +285,12 @@ The Weather App works in the following steps:
 
 The entire application runs entirely in the browser using client-side JavaScript with no backend required.
 
-
+---
 
 ## How to Run These Projects Locally
 
 
-## Repository Structure
+### Repository Structure
 
 ```text
 html-css-javascript-mini-projects/
@@ -295,7 +307,7 @@ html-css-javascript-mini-projects/
 └── 10-weather-app/
 ```
 
-## Getting Started
+### Getting Started
 
 ```bash
 git clone https://github.com/imdad-dev/html-css-javascript-mini-projects.git
