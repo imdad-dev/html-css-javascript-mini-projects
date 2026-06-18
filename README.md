@@ -1,36 +1,46 @@
-# My First Web Development Journey 🌱
+# 📚 HTML, CSS & JavaScript Mini Projects
 
-Hi there! I'm **Imdadul Hoque** from Assam👋
+A collection of **10+ beginner-to-intermediate web development projects** built using **HTML, CSS, and JavaScript**. These projects focus on core front-end concepts including responsive design, DOM manipulation, local storage, API integration, animations, and interactive user experiences.
 
-This repository is very special to me — it's where I keep **all my  first time projects** when I started learning web development in 2025.
+## Project Categories
 
-If you're a complete beginner like I was, I hope seeing my progress motivates you.  
+### 🎨 UI & Landing Pages
 
-**You don't need to be perfect from day one — just start.**
+* Personal Portfolio
+* Zomato Landing Page
+* Glowing Animated Profile Card
 
-## Why I Created This Repo
+### 🎮 Games & Interactive Projects
 
-- To track my own growth 📈
-- To look back in the future and smile at how far I've come 😄
-- To maybe inspire **one person** who feels "I'm too late" or "everyone else is better"
-- To remind myself: **small consistent steps really do add up**
+* Rock Paper Scissors
+* Tic Tac Toe
+* Drum Kit
+
+### 📋 Productivity Applications
+
+* Expense Tracker
+* To-Do List
+* Quiz App
+
+### 🌐 API-Based Applications
+
+* Weather App
 
  
 ## Projects
 
 ### 01. Personal Portfolio
 
-My very first webpage — a simple personal portfolio.
+A responsive personal portfolio website showcasing basic HTML structure and CSS styling.
 
-**What it shows**  
-- Basic HTML structure (headings, paragraphs, links, images)  
-- Simple CSS styling (colors, fonts, centering, margins)  
-- A little bit of responsive design (media queries for mobile)
+**Key Concepts**
+- Semantic HTML
+- CSS Styling
+- Responsive Design
 
-**Skills used**  
-- HTML5 semantic tags (`<header>`, `<main>`, `<section>`, `<footer>`)  
-- CSS basics (flexbox for layout, colors)
-|  
+**Tech Stack**
+- HTML5
+- CSS3 
  
  ### 02. Zomato basic food delivery app
  
@@ -267,6 +277,29 @@ The entire application runs entirely in the browser using client-side JavaScript
 
 ## How to Run These Projects Locally
 
-1. Clone the repo
-   ```bash
-   git clone https://github.com/imdad-dev/html-css-javascript-mini-projects.git
+
+## Repository Structure
+
+```text
+html-css-javascript-mini-projects/
+│
+├── 01-portfolio/
+├── 02-zomato-landing-page/
+├── 03-profile-card/
+├── 04-rock-paper-scissors/
+├── 05-tic-tac-toe/
+├── 06-expense-tracker/
+├── 07-drum-kit/
+├── 08-quiz-app/
+├── 09-todo-list/
+└── 10-weather-app/
+```
+
+## Getting Started
+
+```bash
+git clone https://github.com/imdad-dev/html-css-javascript-mini-projects.git
+```
+
+Open the desired project folder and launch the `index.html` file in your browser.
+
