@@ -33,12 +33,12 @@ A collection of **10+ beginner-to-intermediate web development projects** built 
 
 A responsive personal portfolio website showcasing basic HTML structure and CSS styling.
 
-**Key Concepts**
+#### Key Concepts
 - Semantic HTML
 - CSS Styling
 - Responsive Design
 
-**Tech Stack**
+#### Tech Stack
 - HTML5
 - CSS3 
  ---
@@ -54,7 +54,7 @@ A responsive food delivery landing page inspired by **Zomato**, built using HTML
 - Embedded media content
 - Mobile-friendly layout
 
-Technologies
+#### Technologies
 
 - HTML5
 - CSS3
