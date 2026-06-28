@@ -287,6 +287,27 @@ The entire application runs entirely in the browser using client-side JavaScript
 
 ---
 
+### 11. Weather Dashboard
+
+A simple Weather Dashboard built using **HTML, CSS, and JavaScript**.  
+Users can add city names, save them in a list, and view weather information for selected cities.
+
+#### Features
+
+- Add city name
+- Display saved cities
+- Select a city to view weather
+- Clean and simple UI
+- Built with plain HTML, CSS, and JavaScript
+
+#### Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+---
+
 ## How to Run These Projects Locally
 
 
